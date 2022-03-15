@@ -1,2 +1,0 @@
-# naumanbashir.github.io
-personal
