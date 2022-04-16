@@ -107,11 +107,19 @@
     </audio> 
      -->
 
-     <audio id="loop-limited" controls="controls" autoplay style="width: 6em;height:20px;">
+     <p><audio id="loop-limited" controls="controls" autoplay style="width: 6em;height:20px;">
         <source src="https://github.com/naumanbashir70/naumanbashir70.github.io/blob/main/img/msc.mp3" type="audio/mp3"> 
-        <!-- <source src="img/msc.mp3" type="audio/mp3">  -->
-    </audio>
-    
+    </audio><br />
+        
+        <script>
+        var loopLimit = 5;
+        var loopCounter = 0;
+        document.getElementById('loop-limited').addEventListener('ended', function(){if (loopCounter < loopLimit){this.currentTime = 0;this.play();loopCounter++;}
+        }, false);
+        </script>
+        
+    </p>
+
     <br />
 
     <!-- about -->
